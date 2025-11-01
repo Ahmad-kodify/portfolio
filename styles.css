@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 3, 55);
+    color: white;
+    font-family: 'Acme', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* space arround krnay say darmayan may space a jati ha dono divs k darmyan */
+    align-items: center;
+    background-color: rgb(16 16 55);
+    height: 58px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-size: 21px;
+    color: #464697;
+}
+
+#element {
+    color: #464697;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 17px 0px;
+}
+
+.firstsection>div {
+    width: 40%;
+}
+
+.leftsection {
+    align-items: center;
+    font-size: 42px;
+    margin: 103px 156px;
+    letter-spacing: 2px;
+}
+
+.rightsection img {
+    width: 500px;
+    height: 450px;
+    margin: 10px -53px;
+}
+
+.purple {
+    color: #464697;
+}
+
+.text-grey {
+    color: grey;
+}
+
+main hr {
+    margin: 0px 75px;
+    border: 0;
+    background-color: #a0a0eb;
+    height: 2px;
+    width: 90%;
+}
+
+.secondsection {
+    margin: 35px 67px;
+    height: 200px;
+}
+
+.secondsection h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 79px;
+}
+
+.Experience {
+    margin: 45px 9px -1px 94px;
+    background-color: #a0a0eb;
+    height: 2px;
+    width: 1000px;
+}
+
+.vertical-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vertical {
+    background-color: #a0a0eb;
+    width: 2px;
+    height: 65px;
+}
+
+.vertical img {
+    width: 52px;
+    height: 48px;
+    position: relative;
+    top: -57px;
+    left: -23px;
+}
+
+.title {
+    position: relative;
+    bottom: -14px;
+    left: -43px;
+    width: 131px;
+}
+
+footer {
+    background-color: #1a1a2d;
+    margin-top: 162px;
+    padding: 28px 0px;
+}
+
+footer ul li {
+    margin: 15px 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+footer ul {
+    margin: 0px 42px;
+}
+
+footer h3 {
+    margin: 34px 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-first img {
+    width: 36px;
+    height: 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+footer ul li span {
+    position: relative;
+    bottom: -15px;
+    left: 16px;
+}
+
+footer .reserved {
+    text-align: center;
+    color: grey;
+    /* padding: 7px 0px; */
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+}
+
+main button {
+    margin-top: 15px;
+    margin-left: 70px;
+    padding: 12px;
+    background-color: #24247f;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+    font-size: 17px;
+    width: 260px;
+
+}
+
+main .btn {
+    margin: 0px 30px;
+}
+
+main button:hover {
+    border-radius: 41px;
+}
+
+footer .footer-first ul li a {
+    position: relative;
+    top: -10px;
+    left: 5px;
+    /* top: 10px; */
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* main hr {
+    height: 2px;
+    background-color: red;
+    width: 75%;
+} */
+
+    main button {
+        margin-left: 10px;
+    }
+
+    .vertical-line {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+
+
+    .vertical {
+        height: unset;
+        width: 2px;
+    }
+
+    .vertical .title {
+        margin-left: 100px;
+        margin-bottom: 31px;
+        font-size: 29px;
+        width: 246px;
+    }
+
+    .vertical img {
+        top: 80px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .Experience {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .firstsection {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .leftsection {
+        margin: 33px 73px;
+    }
+
+    main button {
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 23px;
+        width: 202px;
+    }
+
+    .secondsection h1 {
+        width: max-content;
+        font-size: 2.7rem;
+        letter-spacing: 1px;
+    }
+
+    .text-grey {
+        font-size: 25px
+    }
+
+    .Experience {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    }
+
+    nav .left {
+        position: relative;
+        bottom: -11px;
+    }
+
+    .leftsection {
+        margin: 33px 102px;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .firstsection {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .firstsection>div {
+        width: 322px;
+    }
+
+    .rightsection img {
+        width: 395px;
+        height: 331px;
+        margin: 8px -20px;
+    }
+    }
